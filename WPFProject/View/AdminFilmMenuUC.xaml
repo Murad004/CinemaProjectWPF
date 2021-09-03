@@ -28,7 +28,7 @@
         <Border BorderBrush="WhiteSmoke" BorderThickness="10" CornerRadius="30" Width="700" Height="200">
             <StackPanel>
                 <Image Name="AdminFilmMenuImage" Width="100" Height="100" Margin="10,20,500,0" Source="user.png"></Image>
-                <Button Command="{Binding }"  Name="AddPhotoBtn" Content="Photo" FontSize="26" Foreground="WhiteSmoke" Width="100" Margin="10,5,500,0">
+                <Button Command="{Binding PhotoBtn}"  Name="AddPhotoBtn" Content="Photo" FontSize="26" Foreground="WhiteSmoke" Width="100" Margin="10,5,500,0">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <ContentControl>

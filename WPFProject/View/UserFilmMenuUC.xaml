@@ -15,14 +15,16 @@
 
         <StackPanel Grid.Column="0">
             <ListBox Margin="10,20,0,0" Name="UserFilmListBox" Background="Black" Foreground="White" Width="400" Height="400" HorizontalAlignment="Left"></ListBox>
-            
-            
+
+
         </StackPanel>
 
         <StackPanel Grid.Column="1">
+            <ListBox Name="TableListBox" Width="300" Height="200" Margin="0,20,0,0" Background="Green" Foreground="White" FontSize="22"></ListBox>
 
 
-            <Button Command="{Binding TableBtn}" Background="DarkRed" Foreground="White" Name="TableBtn" Width="300" Height="50" FontSize="30" Content="Table" Margin="0,250,0,0"></Button>
+
+            <Button Command="{Binding TableBtn}" Background="DarkRed" Foreground="White" Name="TableBtn" Width="300" Height="50" FontSize="30" Content="Table" Margin="0,40,0,0"></Button>
             <Button Command="{Binding BuyBtn}" Background="DarkRed" Foreground="White" Name="BuyBtn" Width="300" Height="50" FontSize="30" Content="Buy" Margin="0,10,0,0"></Button>
             <Button Command="{Binding BackBtn}" Background="DarkRed" Foreground="White" Name="BackBtn" Width="350" Height="50" FontSize="30" Content="Back" Margin="0,10,0,0"></Button>
         </StackPanel>

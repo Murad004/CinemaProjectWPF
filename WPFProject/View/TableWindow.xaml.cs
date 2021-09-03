@@ -22,8 +22,24 @@ namespace WPFProject.View
     {
         public TableWindow()
         {
-            DataContext = new TableWindowViewModel();
             InitializeComponent();
+
+        }
+
+        bool isPressed1 = false;
+        private void Table1_Click(object sender, RoutedEventArgs e)
+        {
+            if(sender is Button bt)
+            {
+                bt.IsEnabled = false;
+                Helper.Helper.UserFilmMenuUC.TableListBox.Items.Add(bt.Content);
+            }
+            isPressed1 = true;
+            if (isPressed1 == true)
+            {
+                MessageBox.Show("Table is selected!");
+
+            }
         }
     }
 }

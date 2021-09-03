@@ -71,7 +71,6 @@
     <Compile Include="ViewModel\AdminFilmMenuViewModel.cs" />
     <Compile Include="ViewModel\AdminMovieListViewModel.cs" />
     <Compile Include="ViewModel\AdminRemoveMovieViewModel.cs" />
-    <Compile Include="ViewModel\TableWindowViewModel.cs" />
     <Compile Include="ViewModel\UserFilmMenuViewModel.cs" />
     <Compile Include="ViewModel\UserUCViewModel.cs" />
     <Compile Include="View\AdminAddMovieUC.xaml.cs">
