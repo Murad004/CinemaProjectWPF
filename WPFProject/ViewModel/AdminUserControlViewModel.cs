@@ -18,6 +18,7 @@ namespace WPFProject.ViewModel
         public FakeRepoAdmin RepoAdmin = new FakeRepoAdmin();
 
         public AdminUserControl ucadmin = Helper.Helper.AdminUserControl;
+
         public RelayCommand SignInBtn { get; set; }
 
         public RelayCommand SignUpBtn { get; set; }
@@ -53,10 +54,6 @@ namespace WPFProject.ViewModel
                           Helper.Helper.AdminFilmMenuUC.AdminSurnameTxtBlck.Text = ucadmin.textBoxLastName.Text;
                           Helper.Helper.AdminFilmMenuUC.AdminAgeTxtBlck.Text = ucadmin.textBoxAge.Text;
 
-                      }
-                      else
-                      {
-                          MessageBox.Show("bbb","Sucsesfully!",MessageBoxButton.OK,MessageBoxImage.Information);
                       }
                   }
               });
