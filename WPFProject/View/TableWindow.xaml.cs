@@ -23,7 +23,6 @@ namespace WPFProject.View
         public TableWindow()
         {
             InitializeComponent();
-
         }
 
         bool isPressed1 = false;

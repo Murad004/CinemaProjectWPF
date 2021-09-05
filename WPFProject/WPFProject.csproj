@@ -66,6 +66,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="File\Database.cs" />
+    <Compile Include="File\Json.cs" />
     <Compile Include="Helper\Helper.cs" />
     <Compile Include="ViewModel\AdminAddMovieViewModel.cs" />
     <Compile Include="ViewModel\AdminFilmMenuViewModel.cs" />
@@ -179,9 +181,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FileHelper\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\adminlogo.png" />
   </ItemGroup>
@@ -199,6 +199,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="View\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\movies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\popcorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\CinemaIconMain1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

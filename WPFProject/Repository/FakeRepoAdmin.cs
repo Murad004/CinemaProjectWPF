@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,9 @@ namespace WPFProject.Repository
 {
     public class FakeRepoAdmin
     {
-        public List<Admin> Admins = new List<Admin>();
+        public ObservableCollection<Admin> Admins = new ObservableCollection<Admin>();
 
-        public List<Admin> GetAdmins()
+        public ObservableCollection<Admin> GetAdmins()
         {
             return Admins;
         }

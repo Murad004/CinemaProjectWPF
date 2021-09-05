@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using WPFProject.Command;
+using WPFProject.File;
 using WPFProject.Models;
 using WPFProject.Repository;
 using WPFProject.View;
@@ -13,6 +14,8 @@ namespace WPFProject.ViewModel
 {
     public class AdminUserControlViewModel : BaseViewModel
     {
+        public Json Json = new Json();
+
         public MainWindow MainWindow = Helper.Helper.MainWindow;
 
         public FakeRepoAdmin RepoAdmin = new FakeRepoAdmin();
@@ -38,8 +41,8 @@ namespace WPFProject.ViewModel
                       ucadmin.DatePicker.Text,
                       ucadmin.textBoxEmail.Text,
                       ucadmin.PasswordBox.Password
-                      ));
-                  
+                      ));                  
+                  Json.JSONSerializationAdmin(RepoAdmin.Admins);
                   ucadmin.SignUpBtn.IsEnabled = false;
                   MessageBox.Show("Qeydiyyat ugurludur.Zehmet olmasa \"Sign in\" bolmesinde E-mail ve Parolunuzu daxil edin.", "Sucsesfully!", MessageBoxButton.OK, MessageBoxImage.Information);
               });

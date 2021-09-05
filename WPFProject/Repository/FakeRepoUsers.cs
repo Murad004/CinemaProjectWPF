@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,9 @@ namespace WPFProject.Repository
 {
     public class FakeRepoUsers
     {
-        public List<User> Users = new List<User>();
+        public ObservableCollection<User> Users = new ObservableCollection<User>();
 
-        public List<User> GetUsers()
+        public ObservableCollection<User> GetUsers()
         {
             return Users;
         }

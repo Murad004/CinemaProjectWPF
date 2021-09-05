@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WPFProject.Command;
+using WPFProject.File;
 using WPFProject.View;
 
 namespace WPFProject.ViewModel

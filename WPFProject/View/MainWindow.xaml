@@ -80,9 +80,15 @@
             
         </StackPanel>
 
-        <Grid Grid.Row="0" Grid.Column="1" Background="DeepSkyBlue">
+        <Grid Grid.Row="0" Grid.Column="1" Background="DarkRed">
             <Button HorizontalAlignment="Right" Width="50" Height="50" Margin="10" Content="X" FontSize="30" Foreground="Red" Background="Black" Click="Button_Click"></Button>
             <StackPanel Orientation="Horizontal">
+                <Image Source="CinemaIconMain1.png" Margin="50,4,0,0"></Image>
+                <Image Source="movies.png" Margin="50,4,0,0"></Image>
+                <Image Source="popcorn.png" Margin="50,4,0,0"></Image>
+                <Image Source="M.png" Margin="50,4,0,0"></Image>
+                <Image Source="c.png" Margin="50,4,0,0"></Image>
+                <Label Width="200" Margin='30,0,0,0' FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White">By Sadikhov</Label>
                 
                 
 
